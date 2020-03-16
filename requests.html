@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home - Super Admin</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css">
+    <!-- Fontastic Custom icon font-->
+    <link rel="stylesheet" href="css/fontastic.css">
+    <!-- Google fonts - Roboto -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"> -->
+    <!-- jQuery Circle-->
+    <link rel="stylesheet" href="css/grasp_mobile_progress_circle-1.0.0.min.css">
+    <!-- Custom Scrollbar-->
+    <link rel="stylesheet" href="vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Color Palette stylesheet-->
+    <link rel="stylesheet" href="css/colorPalette.css">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <!-- Side Navbar -->
+    <nav class="side-navbar">
+      <div class="side-navbar-wrapper">
+        <!-- Sidebar Header    -->
+        <div class="sidenav-header d-flex align-items-center justify-content-center">
+          <!-- User Info-->
+          <div class="sidenav-header-inner text-center"><img src="img/SuperAdmin.png" alt="person" class="img-fluid rounded-circle">
+            <h2 class="h5">Super Admin</h2><span>Medical Care</span>
+          </div>
+          <!-- Small Brand information, appears on minimized sidebar-->
+          <div class="sidenav-header-logo"><a href="index.html" class="brand-small text-center"> <strong class="color5">M</strong><strong class="color3">C</strong></a></div>
+        </div>
+        <!-- Sidebar Navigation Menus-->
+        <div class="main-menu">
+          <h5 class="sidenav-heading text-center">Main</h5>
+          <ul id="side-main-menu" class="side-menu list-unstyled">        
+            <!-- Home-->
+            <li><a href="index.html"> <i class="fas fa-home"></i>Home</a></li>
+            <!-- Add Partener -->
+            <li><a href="#addpartener" aria-expanded="false" data-toggle="collapse"> <i class="fas fa-plus text-success"></i>Add Partener </a>
+              <ul id="addpartener" class="collapse list-unstyled ">
+                <li><a href="addHospital.html">Hospital</a></li>
+                <li><a href="addLab.html">Lab</a></li>
+                <li><a href="addBloodBank.html">Blood Bank</a></li>
+              </ul>
+            </li>
+            <!-- Delete Partener -->
+            <li><a href="deletepartener.html"> <i class="far fa-trash-alt text-danger"></i>Delete Partener</a></li>
+            <!-- Edit website Social Icons -->
+            <li><a href="#editsocial" aria-expanded="false" data-toggle="collapse"> <i class="fas fa-edit"></i></i>Edit Social Icons</a>
+              <!-- <i class="fas fa-caret-down"></i> -->
+              <ul id="editsocial" class="collapse list-unstyled ">
+                <li><a href="editgoogleplus.html"><i class="fab fa-google-plus-g"></i>Google Plus</a></li>
+                <li><a href="editfacebook.html"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                <li><a href="edittwitter.html"><i class="fab fa-twitter"></i>Twitter</a></li>
+                <li><a href="edityoutube.html"><i class="fab fa-youtube"></i>Youtube</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+       <div class="admin-menu">
+          <h5 class="sidenav-heading"><h5 class="sidenav-heading text-center">Parteners Contact</h5>
+          <ul id="side-admin-menu" class="side-menu list-unstyled"> 
+            <li> <a href="notification.html"> <i class="fas fa-bell"></i>Notificaions <div class="badge badge-info">12 New</div></a></li>
+            <li> <a href="feedback.html"> <i class="far fa-comment"></i>Feedback <div class="badge badge-secondary">6 New</div></a></li>
+            <li> <a href="messages.html"> <i class="fas fa-sms"></i></i>Messages <div class="badge badge-warning">6 New</div></a></li>
+            <li> <a href="requests.html"> <i class="fas fa-envelope"></i></i>Requests <div class="badge badge-warning">6 New</div></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="page">
+      <!-- navbar-->
+      <header class="header">
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-holder d-flex align-items-center justify-content-between">
+              <div class="navbar-header"><a id="toggle-btn" href="#" class="menu-btn"><i class="fas fa-bars"></i></a><a href="index.html" class="navbar-brand">
+                  <div class="brand-text d-none d-md-inline-block"><strong class="color4">Medical Care</strong></div></a></div>
+              <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+                <!-- Notifications dropdown-->
+                <li class="nav-item dropdown"> <a id="notifications" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><i class="fas fa-bell"></i><span class="badge badge-warning">12</span></a>
+                  <ul aria-labelledby="notifications" class="dropdown-menu">
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                        <div class="notification d-flex justify-content-between">
+                          <div class="notification-content"><i class="far fa-comment"></i>You have 6 new Feedbacks </div>
+                          <div class="notification-time"><small>4 minutes ago</small></div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                        <div class="notification d-flex justify-content-between">
+                          <div class="notification-content"><i class="fab fa-facebook-f"></i></i>You have 2 followers</div>
+                          <div class="notification-time"><small>4 minutes ago</small></div>
+                        </div></a></li>
+                    <!-- <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                        <div class="notification d-flex justify-content-between">
+                          <div class="notification-content"><i class="fa fa-upload"></i>Server Rebooted</div>
+                          <div class="notification-time"><small>4 minutes ago</small></div>
+                        </div></a></li> -->
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> 
+                        <div class="notification d-flex justify-content-between">
+                          <div class="notification-content"><i class="fab fa-twitter"></i>You have 2 followers</div>
+                          <div class="notification-time"><small>10 minutes ago</small></div>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="notification.html" class="dropdown-item all-notifications text-center"> <strong> <i class="fas fa-bell"></i>view all notifications                                            </strong></a></li>
+                  </ul>
+                </li>
+                <!-- Messages dropdown-->
+                <li class="nav-item dropdown"> <a id="messages" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><i class="fa fa-envelope"></i><span class="badge badge-info">10</span></a>
+                  <ul aria-labelledby="notifications" class="dropdown-menu">
+                    <li><a rel="nofollow" href="#" class="dropdown-item d-flex"> 
+                        <div class="msg-profile"> <img src="img/avatar-1.png" alt="..." class="img-fluid rounded-circle"></div>
+                        <div class="msg-body">
+                          <h3 class="h5">Jason Doe</h3><span>sent you a direct message</span><small>1 days ago at 3:03 am - 10.03.2020</small>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item d-flex"> 
+                        <div class="msg-profile"> <img src="img/avatar-2.png" alt="..." class="img-fluid rounded-circle"></div>
+                        <div class="msg-body">
+                          <h3 class="h5">Sara Williams</h3><span>sent you a direct message</span><small>3 days ago at 7:58 pm - 12.03.2020</small>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item d-flex"> 
+                        <div class="msg-profile"> <img src="img/avatar-3.png" alt="..." class="img-fluid rounded-circle"></div>
+                        <div class="msg-body">
+                          <h3 class="h5">Ashley Wood</h3><span>sent you a direct message</span><small>7 days ago at 10:36 pm - 15.03.2020</small>
+                        </div></a></li>
+                    <li><a rel="nofollow" href="messages.html" class="dropdown-item all-notifications text-center"> <strong> <i class="fa fa-envelope"></i>Read all messages    </strong></a></li>
+                  </ul>
+                </li>
+                <!-- Languages dropdown    -->
+                <li class="nav-item dropdown"><a id="languages" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link language dropdown-toggle"><img src="img/flags/16/GB.png" alt="English"><span class="d-none d-sm-inline-block">English</span></a>
+                  <ul aria-labelledby="languages" class="dropdown-menu">
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> <img src="img/flags/16/EG.png" alt="English" class="mr-2"><span>Arabic</span></a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> <img src="img/flags/16/FR.png" alt="English" class="mr-2"><span>French                                                         </span></a></li>
+                  </ul>
+                </li>
+                <!-- Log out-->
+                <li class="nav-item"><a href="login.html" class="nav-link logout"> <span class="d-none d-sm-inline-block">Logout</span><i class="fas fa-sign-out-alt"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section class="container">
+        <div class="row justify-content-center">
+        <h3 class="text-center col-12 h1 my-5 text-muted">All Requests Requests</h3>
+          <div class="col-lg-8 col-sm-10">
+            <!-- Partner Requests-->
+            <div id="daily-feeds" class="card updates daily-feeds">
+              <div id="feeds-header" class="card-header d-flex justify-content-between align-items-center">
+                <h2 class="h5 display"><a data-toggle="collapse" data-parent="#daily-feeds" href="#feeds-box" aria-expanded="true" aria-controls="feeds-box">Partners Requests </a></h2>
+                <div class="right-column">
+                  <div class="badge badge-primary">10 Requests Not readed</div>
+                </div>
+              </div>
+              <div id="feeds-box" role="tabpanel" class="collapse show">
+                <div class="feed-box">
+                  <ul class="feed-elements list-unstyled">
+                    <!-- List-->
+                    <li class="clearfix">
+                      <div class="feed d-flex justify-content-between">
+                        <div class="feed-body d-flex justify-content-between"><a href="#" class="feed-profile"><img src="img/avatar-5.png" alt="person" class="img-fluid rounded-circle"></a>
+                          <div class="content"><strong>Aria Smith</strong><small>Posted a new blog </small>
+                            <div class="full-date"><small>Today 6:12 pm - 12.03.2020</small></div>
+                            <div class="CTAs"><a href="#" class="btn btn-xs btn-success"><i class="fas fa-check"></i>Allow</a><a href="#" class="btn btn-xs btn-danger"><i class="fas fa-ban"></i>Refuse</a></div>
+                          </div>
+                        </div>
+                        <div class="date"><small>1min ago</small></div>
+                      </div>
+                      <div class="message-card"> <small>We have a new idea will improve the Medical Care website it's (bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ).</small></div>
+                    </li>
+                    <!-- List-->
+                    <li class="clearfix">
+                      <div class="feed d-flex justify-content-between">
+                        <div class="feed-body d-flex justify-content-between"><a href="#" class="feed-profile"><img src="img/avatar-2.png" alt="person" class="img-fluid rounded-circle"></a>
+                          <div class="content"><strong>Heba Mohamed</strong><small>Posted a new blog </small>
+                            <div class="full-date"><small>Today 6:09 pm - 12.03.2020</small></div>
+                            <div class="CTAs"><a href="#" class="btn btn-xs btn-success"><i class="fas fa-check"></i>Allow</a><a href="#" class="btn btn-xs btn-danger"><i class="fas fa-ban"></i>Refuse</a></div>
+                          </div>
+                        </div>
+                        <div class="date"><small>8min ago</small></div>
+                      </div>
+                      <div class="message-card"> <small>We have a problem for add more than one articles in the same day.</small></div>
+
+                    </li>
+                    <!-- List-->
+                    <li class="clearfix">
+                      <div class="feed d-flex justify-content-between">
+                        <div class="feed-body d-flex justify-content-between"><a href="#" class="feed-profile"><img src="img/avatar-3.png" alt="person" class="img-fluid rounded-circle"></a>
+                          <div class="content"><strong>Alaa Mostafa</strong><small>Posted a new blog </small>
+                            <div class="full-date"><small>Today 5:04 pm - 12.03.2020</small></div>
+                            <div class="CTAs"><a href="#" class="btn btn-xs btn-success"><i class="fas fa-check"></i>Allow</a><a href="#" class="btn btn-xs btn-danger"><i class="fas fa-ban"></i>Refuse</a></div>
+                          </div>
+                        </div>
+                        <div class="date"><small>1hour 13min ago</small></div>
+                      </div>
+                      <div class="message-card"> <small>We want to add new analysis but that not exists in analysis category department name is (AAAAA).</small></div>
+                    </li>
+                    <!-- List-->
+                    <li class="clearfix">
+                      <div class="feed d-flex justify-content-between">
+                        <div class="feed-body d-flex justify-content-between"><a href="#" class="feed-profile"><img src="img/avatar-8.png" alt="person" class="img-fluid rounded-circle"></a>
+                          <div class="content"><strong>Mariam Doe</strong><small>Posted a new blog </small>
+                            <div class="full-date"><small>Today 3:05 pm - 12.03.2020</small></div>
+                            <div class="CTAs"><a href="#" class="btn btn-xs btn-success"><i class="fas fa-check"></i>Allow</a><a href="#" class="btn btn-xs btn-danger"><i class="fas fa-ban"></i>Refuse</a></div>
+                          </div>
+                        </div>
+                        <div class="date"><small>3hour 50min ago</small></div>
+                      </div>
+                      <div class="message-card"> <small>We want to add new department but that not exists in department category department name is (DDDD).</small></div>
+                    </li>
+                    <!-- List-->
+                    <li class="clearfix">
+                      <div class="feed d-flex justify-content-between">
+                        <div class="feed-body d-flex justify-content-between"><a href="#" class="feed-profile"><img src="img/avatar-6.png" alt="person" class="img-fluid rounded-circle"></a>
+                          <div class="content"><strong>Sameh Martinez</strong><small>Posted a new blog </small>
+                            <div class="full-date"><small>Today 5:18 pm - 11.03.2020</small></div>
+                            <div class="CTAs"><a href="#" class="btn btn-xs btn-success"><i class="fas fa-check"></i>Allow</a><a href="#" class="btn btn-xs btn-danger"><i class="fas fa-ban"></i>Refuse</a></div>
+                          </div>
+                        </div>
+                        <div class="date"><small>Yesterday</small></div>
+                      </div>
+                      <div class="message-card"> <small>We want to update our email to become (XYZ.hosptial@yahoo.com).</small></div>
+                    </li>
+                    <!-- List -->
+                    <li class="clearfix">
+                      <div class="feed d-flex justify-content-between">
+                        <div class="feed-body d-flex justify-content-between"><a href="#" class="feed-profile"><img src="img/avatar-4.png" alt="person" class="img-fluid rounded-circle"></a>
+                          <div class="content"><strong>Ghada Ali</strong><small>Posted a new blog </small>
+                            <div class="full-date"><small>Today 7:38 pm - 12.03.2020</small></div>
+                            <div class="CTAs"><a href="#" class="btn btn-xs btn-success"><i class="fas fa-check"></i>Allow</a><a href="#" class="btn btn-xs btn-danger"><i class="fas fa-ban"></i>Refuse</a></div>
+                          </div>
+                        </div>
+                        <div class="date"><small>2day ago</small></div>
+                      </div>
+                      <div class="message-card"> <small>We have a problem for add more than one articles in the same day.</small></div>
+                    </li>
+
+                    <!-- --------------------------- -->
+
+                    <!-- List-->
+                    <li class="clearfix">
+                      <div class="feed d-flex justify-content-between">
+                        <div class="feed-body d-flex justify-content-between"><a href="#" class="feed-profile"><img src="img/avatar-5.png" alt="person" class="img-fluid rounded-circle"></a>
+                          <div class="content"><strong>Aria Smith</strong><small>Posted a new blog </small>
+                            <div class="full-date"><small>Today 6:12 pm - 12.03.2020</small></div>
+                            <div class="CTAs"><a href="#" class="btn btn-xs btn-success"><i class="fas fa-check"></i>Allow</a><a href="#" class="btn btn-xs btn-danger"><i class="fas fa-ban"></i>Refuse</a></div>
+                          </div>
+                        </div>
+                        <div class="date"><small>1min ago</small></div>
+                      </div>
+                      <div class="message-card"> <small>We have a new idea will improve the Medical Care website it's (bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ).</small></div>
+                    </li>
+                    <!-- List-->
+                    <li class="clearfix">
+                      <div class="feed d-flex justify-content-between">
+                        <div class="feed-body d-flex justify-content-between"><a href="#" class="feed-profile"><img src="img/avatar-2.png" alt="person" class="img-fluid rounded-circle"></a>
+                          <div class="content"><strong>Heba Mohamed</strong><small>Posted a new blog </small>
+                            <div class="full-date"><small>Today 6:09 pm - 12.03.2020</small></div>
+                            <div class="CTAs"><a href="#" class="btn btn-xs btn-success"><i class="fas fa-check"></i>Allow</a><a href="#" class="btn btn-xs btn-danger"><i class="fas fa-ban"></i>Refuse</a></div>
+                          </div>
+                        </div>
+                        <div class="date"><small>8min ago</small></div>
+                      </div>
+                      <div class="message-card"> <small>We have a problem for add more than one articles in the same day.</small></div>
+
+                    </li>
+                    <!-- List-->
+                    <li class="clearfix">
+                      <div class="feed d-flex justify-content-between">
+                        <div class="feed-body d-flex justify-content-between"><a href="#" class="feed-profile"><img src="img/avatar-3.png" alt="person" class="img-fluid rounded-circle"></a>
+                          <div class="content"><strong>Alaa Mostafa</strong><small>Posted a new blog </small>
+                            <div class="full-date"><small>Today 5:04 pm - 12.03.2020</small></div>
+                            <div class="CTAs"><a href="#" class="btn btn-xs btn-success"><i class="fas fa-check"></i>Allow</a><a href="#" class="btn btn-xs btn-danger"><i class="fas fa-ban"></i>Refuse</a></div>
+                          </div>
+                        </div>
+                        <div class="date"><small>1hour 13min ago</small></div>
+                      </div>
+                      <div class="message-card"> <small>We want to add new analysis but that not exists in analysis category department name is (AAAAA).</small></div>
+                    </li>
+                    <!-- List-->
+                    <li class="clearfix">
+                      <div class="feed d-flex justify-content-between">
+                        <div class="feed-body d-flex justify-content-between"><a href="#" class="feed-profile"><img src="img/avatar-8.png" alt="person" class="img-fluid rounded-circle"></a>
+                          <div class="content"><strong>Mariam Doe</strong><small>Posted a new blog </small>
+                            <div class="full-date"><small>Today 3:05 pm - 12.03.2020</small></div>
+                            <div class="CTAs"><a href="#" class="btn btn-xs btn-danger"><i class="fas fa-ban"></i>Refused</a></div>
+                          </div>
+                        </div>
+                        <div class="date"><small>3hour 50min ago</small></div>
+                      </div>
+                      <div class="message-card"> <small>We want to add new department but that not exists in department category department name is (DDDD).</small></div>
+                    </li>
+                    <!-- List-->
+                    <li class="clearfix">
+                      <div class="feed d-flex justify-content-between">
+                        <div class="feed-body d-flex justify-content-between"><a href="#" class="feed-profile"><img src="img/avatar-6.png" alt="person" class="img-fluid rounded-circle"></a>
+                          <div class="content"><strong>Sameh Martinez</strong><small>Posted a new blog </small>
+                            <div class="full-date"><small>Today 5:18 pm - 11.03.2020</small></div>
+                            <div class="CTAs"><a href="#" class="btn btn-xs btn-success"><i class="fas fa-check"></i>Accpted</a></div>
+                          </div>
+                        </div>
+                        <div class="date"><small>Yesterday</small></div>
+                      </div>
+                      <div class="message-card"> <small>We want to update our email to become (XYZ.hosptial@yahoo.com).</small></div>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- End Partner Requests-->
+          </div>
+        </div>
+      </section>
+
+
+
+      
+      <footer class="main-footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-6">
+              <p>Medical Care &copy; 2020</p>
+            </div>
+            <div class="col-sm-6 text-right">
+              <p>Design by <a href="index.html" class="external">Medical Care Team</a></p>
+              <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions and it helps me to run Bootstrapious. Thank you for understanding :)-->
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery-3.4.1.min.js"></script>
+    <script src="vendor/popper.js/popper.min.js"> </script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/grasp_mobile_progress_circle-1.0.0.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/jquery-validation/jquery.validate.min.js"></script>
+    <script src="vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/charts-home.js"></script>
+    <!-- Main File-->
+    <script src="js/front.js"></script>
+  </body>
+</html>
