@@ -1,0 +1,80 @@
+.box {
+  position: relative;
+  /* border: 1px solid #000; */
+}
+.box-left {
+  /* border: 1px solid blue; */
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #e74c3c;
+  top: 21px;
+  bottom: 0;
+  left: 0;
+  /* right: 25px; */
+  margin: auto;
+  cursor: pointer;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+
+.fa-times {
+  font-size: 35px !important;
+  margin-top: 8.5px;
+  margin-left: 12.5px;
+  color: #fff;
+  transition: all 0.25s;
+}
+/* .fa-times:hover {
+  margin-left: 8.5px;
+} */
+.box-right {
+  /* border: 1px solid green; */
+  position: absolute;
+  height: 40px;
+  width: 10px;
+  background-color: #e74c3c;
+  top: 21px;
+  bottom: 0;
+  left: -138px;
+  right: 0;
+  margin: auto;
+  transition: 0.5s;
+  cursor: pointer;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+.fa-check {
+  font-size: 35px !important;
+  margin-left: 3.5px;
+  margin-top: 7.5px;
+}
+
+.bar {
+  /* border: 1px dotted   #000; */
+  height: 40px;
+  width: 0px;
+  background-color: lightcyan;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  right: 0;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.cl-bar2 {
+  width: 45px;
+}
+
+.cl-box2 {
+  left: -48px;
+}
+.box-left a{
+    color: inherit;
+}
+.box-left a:hover{
+  color: #28a745;
+}
+/* --------------------------------------- */
